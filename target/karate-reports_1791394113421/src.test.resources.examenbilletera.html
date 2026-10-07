@@ -25,7 +25,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 });
 </script>
   
-    <title>src.test.resources.billetera</title>  
+    <title>src.test.resources.examenbilletera</title>  
   </head>
   <body>   
     <div id="root-container">
@@ -37,24 +37,24 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">2</div>
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-type">
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2026-10-06 10:39:35 PM</div>
+    <div>2026-10-07 12:01:48 PM</div>
   </div>        
 </div>
 
         <div class="nav-container">
-          <div class="nav-item failed">
-            <a href="#[1:8]"><span>[1:8]</span> <span>Registro del emisor</span></a>
+          <div class="nav-item passed">
+            <a href="#[1:4]"><span>[1:4]</span> <span>Registro del emisor</span></a>
           </div>
-          <div class="nav-item failed">
-            <a href="#[2:24]"><span>[2:24]</span> <span>Registro del receptor</span></a>
+          <div class="nav-item passed">
+            <a href="#[2:22]"><span>[2:22]</span> <span>Registro del emisor</span></a>
           </div>
         </div>
       </div>
@@ -63,44 +63,38 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
           <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
           <span class="feature-label">Feature:</span>
-          <span class="feature-path">src/test/resources/billetera.feature</span><span class="feature-label">|</span>
-          <span class="feature-name">Billetera Digital</span>
+          <span class="feature-path">src/test/resources/examenbilletera.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Examen Billetera Digital</span>
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:8]">
+          <div class="scenario-heading" id="[1:4]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:8]</span>
+                Scenario: <span>[1:4]</span>
                 <span class="scenario-name">Registro del emisor</span>
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>1628</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1637</span>
             </div>
           </div>
-          <div class="step-row">
-            <div class="step-container" id="[1:8]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[1:8]bg"><div>
+          
+          <div><div>
   
 
   
 
   <div class="step-row">
     <div class="step-container" id="0.5">
-      <div class="step-ref bg-step">5</div>
+      <div class="step-ref passed">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>header x-channel = &#39;WEB&#39;</span>
+        <span>Given</span>&nbsp;<span>url &#39;http://134.209.211.10:4001&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">115</div>
@@ -118,20 +112,76 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[1:8]bg"><div>
+          <div><div>
   
 
   
 
   <div class="step-row">
     <div class="step-container" id="0.6">
-      <div class="step-ref bg-step">6</div>
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-channel = &#39;WEB&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/auth/v1/register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -156,6 +206,136 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">9</div>
       
       <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">92</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.9">{
+  &quot;phone&quot;: &quot;941247856&quot;,
+  &quot;fullName&quot;: &quot;emisor1&quot;,
+  &quot;email&quot;: &quot;zairayabar000@test.com&quot;,
+  &quot;pin&quot;: &quot;123456&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1428</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">12:01:47.750 request:
+1 &gt; POST http://134.209.211.10:4001/auth/v1/register
+1 &gt; x-channel: WEB
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 90
+1 &gt; Host: 134.209.211.10:4001
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;phone&quot;:&quot;941247856&quot;,&quot;fullName&quot;:&quot;emisor1&quot;,&quot;email&quot;:&quot;zairayabar000@test.com&quot;,&quot;pin&quot;:&quot;123456&quot;}
+
+12:01:48.043 response time in milliseconds: 285
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 190
+1 &lt; ETag: W/&quot;be-k09AnVSkTMytbZWN9fXRJteCywE&quot;
+1 &lt; Date: Wed, 07 Oct 2026 17:01:48 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;message&quot;:&quot;Usuario creado exitosamente&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;u_1791392508835&quot;,&quot;phone&quot;:&quot;941247856&quot;,&quot;name&quot;:&quot;emisor1&quot;,&quot;email&quot;:&quot;zairayabar000@test.com&quot;,&quot;pin&quot;:&quot;123456&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;contacts&quot;:[]}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:22]</span>
+                <span class="scenario-name">Registro del emisor</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>221</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>url &#39;http://134.209.211.10:4001&#39;</span>
       </div>
     </div>
@@ -180,211 +360,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.10">
-      <div class="step-ref passed">10</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>path &#39;/auth/v1/register&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.11">
-      <div class="step-ref passed">11</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request</span>
-      </div>
-    </div>
-    <div class="time-cell passed">151</div>
-  </div>
-
-   
-  
-  <div class="preformatted" data-parent="0.11">{
-  &quot;phone&quot;: &quot;#(emiphone)&quot;,
-  &quot;fullName&quot;: &quot;#(emifullName)&quot;,
-  &quot;email&quot;: &quot;#(emiemail)&quot;,
-  &quot;pin&quot;: &quot;#(emipin)&quot;
-}</div>
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.20">
-      <div class="step-ref passed">20</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method post</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1359</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.20">22:39:35.262 request:
-1 &gt; POST http://134.209.211.10:4001/auth/v1/register
-1 &gt; x-channel: WEB
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 91
-1 &gt; Host: 134.209.211.10:4001
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;phone&quot;:&quot;#(emiphone)&quot;,&quot;fullName&quot;:&quot;#(emifullName)&quot;,&quot;email&quot;:&quot;#(emiemail)&quot;,&quot;pin&quot;:&quot;#(emipin)&quot;}
-
-22:39:35.524 response time in milliseconds: 258
-1 &lt; 409
-1 &lt; X-Powered-By: Express
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 51
-1 &lt; ETag: W/&quot;33-MvELUL906oT7cZf3NeyUHt0DP/8&quot;
-1 &lt; Date: Wed, 07 Oct 2026 03:39:36 GMT
-1 &lt; Connection: keep-alive
-1 &lt; Keep-Alive: timeout=5
-{&quot;code&quot;:&quot;AUTH_006&quot;,&quot;message&quot;:&quot;User already exists&quot;}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.21">
-      <div class="step-ref failed">21</div>
-      
-      <div class="step-cell failed">
-        <span>Then</span>&nbsp;<span>status 201</span>
-      </div>
-    </div>
-    <div class="time-cell failed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.21">22:39:35.529 src/test/resources/billetera.feature:21
-Then status 201
-status code was: 409, expected: 201, response time in milliseconds: 258, url: http://134.209.211.10:4001/auth/v1/register, response: 
-{&quot;code&quot;:&quot;AUTH_006&quot;,&quot;message&quot;:&quot;User already exists&quot;}
-src/test/resources/billetera.feature:21
-</div>   
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[2:24]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[2:24]</span>
-                <span class="scenario-name">Registro del receptor</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>198</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[2:24]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[2:24]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.5">
-      <div class="step-ref bg-step">5</div>
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>header x-channel = &#39;WEB&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[2:24]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.6">
-      <div class="step-ref bg-step">6</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -409,10 +392,10 @@ src/test/resources/billetera.feature:21
       <div class="step-ref passed">25</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url &#39;http://134.209.211.10:4001&#39;</span>
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -440,7 +423,7 @@ src/test/resources/billetera.feature:21
         <span>And</span>&nbsp;<span>path &#39;/auth/v1/register&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -468,16 +451,16 @@ src/test/resources/billetera.feature:21
         <span>And</span>&nbsp;<span>request</span>
       </div>
     </div>
-    <div class="time-cell passed">5</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
   
   <div class="preformatted" data-parent="0.27">{
-  &quot;phone&quot;: &quot;#(recpphone)&quot;,
-  &quot;fullName&quot;: &quot;#(recpfullName)&quot;,
-  &quot;email&quot;: &quot;#(recpemail)&quot;,
-  &quot;pin&quot;: &quot;#(recppin)&quot;
+  &quot;phone&quot;: &quot;974123659&quot;,
+  &quot;fullName&quot;: &quot;receptor1&quot;,
+  &quot;email&quot;: &quot;zairayabar000@test.com&quot;,
+  &quot;pin&quot;: &quot;123456&quot;
 }</div>
 
   
@@ -501,7 +484,7 @@ src/test/resources/billetera.feature:21
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">191</div>
+    <div class="time-cell passed">214</div>
   </div>
 
    
@@ -510,28 +493,28 @@ src/test/resources/billetera.feature:21
 
   
 
-  <div class="preformatted" data-parent="0.36">22:39:35.565 request:
+  <div class="preformatted" data-parent="0.36">12:01:48.075 request:
 1 &gt; POST http://134.209.211.10:4001/auth/v1/register
 1 &gt; x-channel: WEB
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 95
+1 &gt; Content-Length: 92
 1 &gt; Host: 134.209.211.10:4001
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;phone&quot;:&quot;#(recpphone)&quot;,&quot;fullName&quot;:&quot;#(recpfullName)&quot;,&quot;email&quot;:&quot;#(recpemail)&quot;,&quot;pin&quot;:&quot;#(recppin)&quot;}
+{&quot;phone&quot;:&quot;974123659&quot;,&quot;fullName&quot;:&quot;receptor1&quot;,&quot;email&quot;:&quot;zairayabar000@test.com&quot;,&quot;pin&quot;:&quot;123456&quot;}
 
-22:39:35.752 response time in milliseconds: 187
-1 &lt; 409
+12:01:48.284 response time in milliseconds: 208
+1 &lt; 201
 1 &lt; X-Powered-By: Express
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 51
-1 &lt; ETag: W/&quot;33-MvELUL906oT7cZf3NeyUHt0DP/8&quot;
-1 &lt; Date: Wed, 07 Oct 2026 03:39:36 GMT
+1 &lt; Content-Length: 192
+1 &lt; ETag: W/&quot;c0-qTGIF3joDa4I9DElGX+3YTMlCWs&quot;
+1 &lt; Date: Wed, 07 Oct 2026 17:01:49 GMT
 1 &lt; Connection: keep-alive
 1 &lt; Keep-Alive: timeout=5
-{&quot;code&quot;:&quot;AUTH_006&quot;,&quot;message&quot;:&quot;User already exists&quot;}
+{&quot;message&quot;:&quot;Usuario creado exitosamente&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;u_1791392509122&quot;,&quot;phone&quot;:&quot;974123659&quot;,&quot;name&quot;:&quot;receptor1&quot;,&quot;email&quot;:&quot;zairayabar000@test.com&quot;,&quot;pin&quot;:&quot;123456&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;contacts&quot;:[]}}
 
 </div>   
 
@@ -546,13 +529,13 @@ src/test/resources/billetera.feature:21
 
   <div class="step-row">
     <div class="step-container" id="0.37">
-      <div class="step-ref failed">37</div>
+      <div class="step-ref passed">37</div>
       
-      <div class="step-cell failed">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 201</span>
       </div>
     </div>
-    <div class="time-cell failed">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -561,12 +544,7 @@ src/test/resources/billetera.feature:21
 
   
 
-  <div class="preformatted" data-parent="0.37">22:39:35.753 src/test/resources/billetera.feature:37
-Then status 201
-status code was: 409, expected: 201, response time in milliseconds: 187, url: http://134.209.211.10:4001/auth/v1/register, response: 
-{&quot;code&quot;:&quot;AUTH_006&quot;,&quot;message&quot;:&quot;User already exists&quot;}
-src/test/resources/billetera.feature:37
-</div>   
+     
 
   
 
